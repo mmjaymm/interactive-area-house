@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Part of House</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a id="living-room" href="#">Living Room</a></li>
+                    <li><a id="dining-room" href="#">Dining Area</a></li>
+                    <li><a id="kitchen" href="#">Kitchen</a></li>
+                    <li><a id="master-room" href="#">Master Bedroom</a></li>
+                    <li><a id="guest-room" href="#">Guest Bedroom</a></li>
+                    <li><a id="bedroom1" href="#">Bathroom 1</a></li>
+                    <li><a id="bedroom2" href="#">Bathroom 2</a></li>
+                </ul>
+            </div>
+        </nav> -->
+        <div class="p-label">
+            <h1>Interactive Area of the House</h1>
+        </div>
+        <section class="floor-plan">
+            <img class="center" usemap="#floor-plan-img" src="assets/floor-plan.jpg" alt="floor-plan" id="floor-plan">
+
+            <map name="floor-plan-img">
+                <area id="bathroom1" alt="bathroom1" coords="137,29,130,153,379,160,381,30" shape="poly">
+                <area id="guestroom" alt="guestroom" coords="115,520,380,520,390,319,122,307" shape="poly">
+                <area id="masterroom" alt="masterroom" coords="625,521,630,323,720,317,726,244,912,244,920,533" shape="poly">
+                <area id="bathroom2" alt="bathroom2" coords="908,38,716,40,719,243,915,246" shape="poly">
+                <area id="diningroom" alt="diningroom" coords="382,42,388,203,552,210,558,41" shape="poly">
+                <area id="kitchen" alt="kitchen" coords="557,47,554,145,619,156,624,325,724,307,719,41" shape="poly">
+                <area id="livingroom" alt="livingroom" coords="388,470,382,280,392,219,616,228,635,463" shape="poly">
+            </map>
+        </section>
+
+        <div class="house-area-tooltip">
+            <h3>Kitchen</h3>
+            <img src="assets/area/kitchen.jpg" alt="">
+            <p>A kitchen is a room or part of a room used for cooking and food preparation in a dwelling or in a commercial establishment.</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
